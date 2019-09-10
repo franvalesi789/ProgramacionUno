@@ -10,6 +10,7 @@ int main()
    int i;
    int j;
    int auxInt;
+   int auxString[LEN];
 
    for(i = 0; i < T; i++)
    {
@@ -31,6 +32,10 @@ int main()
                auxInt = legajo[i];
                legajo[i] = legajo[j];
                legajo[j] = auxInt;
+
+               strcpy(auxString, nombre[i]);
+               strcpy(nombre[i], nombre[j]);
+               strcpy(nombre[j], auxString);
            }
        }
    }

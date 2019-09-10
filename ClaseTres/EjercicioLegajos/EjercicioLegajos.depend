@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1568127597 source:d:\valesi\programacionuno\clasetres\ejerciciolegajos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
