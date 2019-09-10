@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1568117495 source:d:\valesi\programacionuno\clasetres\main.c
+1568120595 source:d:\valesi\programacionuno\clasetres\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
