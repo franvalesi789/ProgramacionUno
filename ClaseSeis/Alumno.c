@@ -222,41 +222,4 @@ int eliminarAlumno(eAlumno listadoDeAlumnos[], int tam)
 
 }
 
-void mostrarAlumnoPorLocalidad(eAlumno ListadoDeAlumnos[],int ta,eLocalidad ListaDeLocalidades[],int tl)
-{
-    int i;
-    int index;
-    eLocalidad localidad;
-
-    for(i=0; i<ta; i++)
-        {
-            if(ListadoDeAlumnos[i].estado==OCUPADO)
-            {
-                buscarAlumnoPorLocalidad(ListaDeLocalidades,ta, i);
-
-                printf("%d %s %f %s\n"ListadoDeAlumnos.legajo,ListadoDeAlumno.nombre, ListadoDeAlumnos.promedio, localidad);
-                break;
-            }
-        }
-
-
-}
-
-int buscarAlumnoPorLocalidad(eLocalidad ListaDeLocalidades[],int tl, int id)
-{
-    int i;
-    int index = -1;
-
-    for (i=0; i<tam; i++)
-        {
-            if(ListaDeLocalidades.idLocalidad == id)
-                {
-                    index=
-                }
-        }
-
-    return index;
-}
-
-
 

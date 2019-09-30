@@ -21,11 +21,11 @@ int main()
         listaDeAlumnos[i].estado=LIBRE;
     }
 
-    hardCodearAlumnos(listaDeAlumnos,A);
+    /*hardCodearAlumnos(listaDeAlumnos,A);*/
 
     do
     {
-        printf("1.Cargar\n2.Mostrar\n3.Ordenar\n4.Eliminar\n5.Modificar\n7.Salir");
+        printf("1.Cargar\n2.Mostrar\n3.Ordenar\n4.Eliminar\n5.Modificar\n7.Salir\n");
         printf("Elija una opcion: ");
         scanf("%d", &opcion);
 
@@ -59,7 +59,7 @@ int main()
             break;
         case 5:
 
-            respuesta = modificarAlumno(listaDeAlumnos,A,102);
+            respuesta = modificarAlumno(listaDeAlumnos,A, 101);
             switch(respuesta)
             {
                 case 0:
