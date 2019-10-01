@@ -18,6 +18,7 @@ typedef struct
     char localidad[30];
     int codigoPostal;
 } eLocalidad;
+
 typedef struct
 {
     int legajo;
@@ -26,6 +27,20 @@ typedef struct
     int idLocalidad;
     int estado;
 } eAlumno;
+
+typedef struct
+{
+    int idMateria;
+    char descripcionMateria[29];
+    int cargaHoraria;
+} eMateria;
+
+typedef struct
+{
+    int legajo;
+    int idMateria;
+    int fechaInscripcion;
+} eInscripcion;
 
 eAlumno cargarAlumno(void);
 void mostrarUnAlumno(eAlumno);
@@ -41,3 +56,5 @@ int modificarAlumno(eAlumno[], int, int);
 int buscarAlumnoPorLegajo(eAlumno[], int, int);
 void mostrarAlumnoPorLocalidad(eAlumno[],int,eLocalidad[],int);
 int buscarAlumnoPorLocalidad(eLocalidad [], int, int);
+void hardCodearMaterias(eMateria[], int);
+void mostrarMaterias(eMateria[], int);

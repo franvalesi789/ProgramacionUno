@@ -37,6 +37,23 @@ void hardCodearAlumnos(eAlumno listadoDeAlumnos[], int tam)
     }
 }
 
+void hardCodearMaterias(eMateria listadoDeMaterias[], int tam)
+{
+    int i;
+    int idMateria[] = {100, 101, 102, 103};
+    char descripcionMateria[][29] = {"Programacion I", "Laboratorio I", "Matematica", "SPD"};
+    int cargaHoraria[] = {4, 4, 6, 4};
+
+    for(i=0; i<4; i++)
+    {
+        listadoDeMaterias[i].idMateria = idMateria[i];
+        listadoDeMaterias[i].cargaHoraria = cargaHoraria[i];
+        strcpy(listadoDeMaterias[i].descripcionMateria, descripcionMateria[i]);
+
+
+    }
+}
+
 void mostrarListadoAlumnos(eAlumno listadoDeAlumnos[], int tam)
 {
     int i;

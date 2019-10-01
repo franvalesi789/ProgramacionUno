@@ -7,6 +7,7 @@ int main()
 {
     eAlumno listaDeAlumnos[A];
     eLocalidad listaLocalidades[3]={{1,"Avellaneda",1870},{2,"Wilde",1872},{3,"Lomas de Zamora",1700}};
+    eMateria listadoDeMaterias[4];
     int i;
     /*for(i=0;i<3;i++)
     {
@@ -21,11 +22,11 @@ int main()
         listaDeAlumnos[i].estado=LIBRE;
     }
 
-    /*hardCodearAlumnos(listaDeAlumnos,A);*/
+
 
     do
     {
-        printf("1.Cargar\n2.Mostrar\n3.Ordenar\n4.Eliminar\n5.Modificar\n7.Salir\n");
+        printf("1.Cargar\n2.Mostrar\n3.Ordenar\n4.Eliminar\n5.Modificar\n6.Materias\n7.Salir\n");
         printf("Elija una opcion: ");
         scanf("%d", &opcion);
 
